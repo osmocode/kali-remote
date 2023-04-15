@@ -1,0 +1,16 @@
+{
+  "name": "kali-remote",
+  "version": "1.0.0",
+  "description": "",
+  "main": "remote.js",
+  "scripts": {
+    "start": "node remote.js"
+  },
+  "author": "osmocode",
+  "license": "ISC",
+  "dependencies": {
+    "ip": "^1.1.8",
+    "node-pty": "^0.10.1",
+    "socket.io": "^4.6.1"
+  }
+}
