@@ -27,4 +27,5 @@ io.on("connection", (socket) => {
     });
 });
 
-http.listen(1234, ip.address(), () => console.log(`Listening on http://${ip.address()}:1234`));
+//http.listen(1234, ip.address(), () => console.log(`Listening on http://${ip.address()}:1234`));
+http.listen(1234, () => console.log(`Listening on http://${ip.address()}:1234`));
