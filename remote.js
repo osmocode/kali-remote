@@ -1,7 +1,6 @@
 const http = require("http").createServer();
 const pty = require("node-pty");
 const os = require("os");
-const ip = require("ip");
 
 var shell = os.platform() === "win32" ? "powershell.exe" : "bash";
 
@@ -27,5 +26,4 @@ io.on("connection", (socket) => {
     });
 });
 
-//http.listen(1234, ip.address(), () => console.log(`Listening on http://${ip.address()}:1234`));
-http.listen(1234, () => console.log(`Listening on http://${ip.address()}:1234`));
+http.listen(1234, '0.0.0.0', () => console.log(`Listening on http://0.0.0.0:1234`));
